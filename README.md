@@ -4,9 +4,10 @@ Very fast, about 40K address in 3ms (view redir_test.php).
    
 1.- Send 404 errors from .htaccess:   
 ErrorDocument 404 /error.php   
+   
 Note: if you are using a CMS that redirects all traffic to the index file such 
 as Wordpress or Magento, you must include the code at the beginning of index.php
-tead of creating an error file.   
+instead of redirecting errors and creating an error file.   
    
 2.- Create an error.php file or insert this code at the start of index.php:   
    
