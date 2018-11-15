@@ -1,4 +1,4 @@
-# OldURLRedir
+# Redirect old URLs
 Redirect old URLs to new ones using an array.   
 Very fast, about 40K address in 3ms (view redir_test.php).   
    
