@@ -6,7 +6,7 @@ example).
 You can load redirections also from an external json or serialized array.   
 On very large arrays using a json file may be a more convenient way to do it.
    
-# Instrucciones básicas   
+# Basic instructions   
 1.- Redirect 404 errors from .htaccess:   
 ErrorDocument 404 /error.php   
    
