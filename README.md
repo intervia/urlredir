@@ -16,18 +16,18 @@ instead of redirecting errors and creating an error file.
    
 2.- Create an error.php file or insert this code at the start of index.php:   
    
-    2.1.- An array to redirect old pages to new ones:   
+    - An array to redirect old pages to new ones:   
     $redir['oldpage1'] = 'https://www.example.com/newpage1';   
     $redir['oldpage2'] = '/newpage2';   
     
     Alternatively, you can use a external JSON file, something like:
     $redir = json_decode(file_get_contents("redirections.json"),true);
 
-    2.2.- Init class:   
+    - Init class:   
     include "class_urlredir.php";   
     $urlredir = new urlredir;   
 
-    2.3.- Redir old pages to new ones (by default with 301 code):   
+    - Redir old pages to new ones (by default with 301 code):   
     urlredir->redirect($redir);   
 
     Alternatively you can use other redirect codes:   
