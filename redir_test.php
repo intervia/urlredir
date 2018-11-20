@@ -3,7 +3,7 @@
 /**
  * 
  * @name Redirection test
- * @version 1.0.0 (2018-11-14)
+ * @version 1.0.1 (2018-11-14)
  * @author Juan cimadevilla
  * @license MIT
  * @copyright Intervia IT (intervia.com)
@@ -34,9 +34,23 @@ include "class_urlredir.php";
 //Init class
 $urlredir = new urlredir;
 
-//Init array
-$redir = [];
-include "redirections.php";
+//Load redirections from json file
+//if json file does not exist, create it from the array on file
+if (is_file("redirections.json")) {
+    $redir = json_decode(file_get_contents("redirections.json"),true);
+    
+} else {
+    
+    if (is_file("redirections.php")) {
+        
+        //Note: includes of very large files can produce 503 errors
+        include "redirections.php";
+        file_put_contents('redirections.json', json_encode($redir));
+    }
+}
+
+//Count the number of redirections
+$reg = count($redir);
 
 //Read number or redirections
 $reg = count($redir);

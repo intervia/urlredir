@@ -1,0 +1,8 @@
+{
+    "oldpage":"/newpage",
+    "oldpage.php?lang=en":"/en/newpage",
+    "en/oldpage.html":"/newpage/en/",
+    "/route/to/oldpage.php":"http://example.com/newpage",
+    "oldpage?value=some":"https://example.com/newpage?p=aboutus",
+    "/route/to/oldpage.php?page=contact":"/forms/en/newpage?p=contact"
+}
