@@ -52,9 +52,6 @@ if (is_file("redirections.json")) {
 //Count the number of redirections
 $reg = count($redir);
 
-//Read number or redirections
-$reg = count($redir);
-
 //Make redirection if any match
 $urlredir->redirect($redir,'307');
 
