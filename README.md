@@ -28,11 +28,11 @@ instead of redirecting errors and creating an error file.
     $urlredir = new urlredir;   
 
     - Redir old pages to new ones (by default with 301 code):   
-    urlredir->redirect($redir);   
+    $urlredir->redirect($redir);   
 
     Alternatively you can use other redirect codes:   
     $code = '302';   
-    urlredir->redirect($redir,$code);   
+    $urlredir->redirect($redir,$code);   
 
     Accepted codes:   
     - 301 (default)   
