@@ -3,7 +3,7 @@
 /**
  * 
  * @name Old URL Redir class (Extracted from WEBvivo framework)
- * @version 1.0.0 (2018-11-14)
+ * @version 1.0.1 (2019-05-16)
  * @author Juan cimadevilla
  * @license MIT
  * @copyright Intervia IT (intervia.com)
@@ -35,7 +35,7 @@ class urlredir
      * @param array $redir Array with (origin page, destination page)
      * @return string Redirected page alias
      */
-    public function redirect($redir='',$code)
+    public function redirect($redir='',$code='')
     {
         //Redir must be an array
         if (empty($redir) || !is_array($redir)) {
