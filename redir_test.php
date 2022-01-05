@@ -4,7 +4,7 @@
  * 
  * @name Redirection test
  * @version 1.0.1 (2018-11-14)
- * @author Juan cimadevilla
+ * @author Juan Cimadevilla
  * @license MIT
  * @copyright Intervia IT (intervia.com)
  * 

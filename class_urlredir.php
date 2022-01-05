@@ -4,7 +4,7 @@
  * 
  * @name Old URL Redir class (Extracted from WEBvivo framework)
  * @version 1.0.1 (2019-05-16)
- * @author Juan cimadevilla
+ * @author Juan Cimadevilla
  * @license MIT
  * @copyright Intervia IT (intervia.com)
  * 
