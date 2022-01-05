@@ -1,13 +1,11 @@
 <?php
-
 /**
- * 
  * @name Old URL Redir class (Extracted from WEBvivo framework)
  * @version 1.0.1 (2019-05-16)
  * @author Juan Cimadevilla
  * @license MIT
  * @copyright Intervia IT (intervia.com)
- * 
+ * @link https://github.com/intervia/urlredir
  */
 
 
