@@ -40,9 +40,8 @@ class urlredir
             return false;
         }
         
-        $key = $this->lcut($this->uri,"/");
-        if (array_key_exists($key,$redir)) {
-            $this->redir($redir[$key],$code);
+        if (array_key_exists($this->uri,$redir)) {
+            $this->redir($redir[$this->uri],$code);
         }
     }
     
@@ -97,25 +96,5 @@ class urlredir
         header("HTTP/1.1 ".$type[$code]);
         header("Location: $redir");
         die();
-    }
-    
-    
-    
-    
-    
-    /**
-     * 
-     * Delete on the left of a string the part 
-     * that matches literally with another one.
-     * 
-     * @param string $str String to cut if there is a match with $cut
-     * @param string $cutstr literal string to be cut on the left of the $str
-     * @return string result of cutting the matching 
-     *                string to the left of $str, with $cut
-     */
-    public function lcut($str,$cutstr)
-    {
-        $cut = preg_quote($cutstr, '/');
-        return preg_replace("/^$cut/",'',$str);
     }
 }
